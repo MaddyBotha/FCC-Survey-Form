@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/main.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div>
+      <h1 class="huge" id="title">LONELY IS THE NIGHT</h1>
+    </div>
+    <div>
+      <p id="description" class="bigger">Tell us what you like about this book</p>
+    </div>
+    <div class="container">
+      <form id="survey-form">
+        <!-- Form Requirements -->
+        <label for="name" id="name-label" class="required">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your Name" size="35" autofocus required>
+        <label for="email" id="email-label" class="required"> Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your Email" size="35" required>
+        <label for="number" id="number-label" class="required">Number</label>
+        <input type="number" id="number" name="age" min="18" max="100" placeholder="Enter your Age" required>
+        <!-- End Form Requirements -->
+        <!-- Dropdown -->
+        <div id="dropdown">
+          <label class="dropdown-label" for="favourite-character">Who's your favourite character?</label>
+          <select class="favourite-character" name="favourite-character">
+        <option class="fav-char" value="Mary">Mary - The Mother</option>
+        <option class="fav-char" value="Dan">Dan - The Father</option>
+        <option class="fav-char" value="Molly">Molly - The Daughter</option>
+        <option class="fav-char" value="Ellie">Ellie - The Weird Neighbour</option>
+        </select>
+        </div>
+        <!-- End Dropdown -->
+        <!-- Radio Options -->
+        <fieldset id="brutus-options">
+          <legend class="legend-field">What happened to Brutus?</legend>
+          <div class="custom-radio">
+            <input type="radio" name="brutus">
+            <label class="brutus-label" for="ran-away">He ran away</label>
+            <input type="radio" name="brutus">
+            <label class="brutus-label" for="bit-someone">He bit someone</label>
+            <input type="radio" name="brutus">
+            <label class="brutus-label" for="died-peacefully">He died peacefully</label><br>
+            <input type="radio" name="brutus">
+            <label class="brutus-label" for="taken-away">He was taken by the pound</label>
+          </div>
+          <!-- End Radio -->
+          <!-- checkbox Options -->
+        </fieldset>
+        <fieldset id="alternate-universe">
+          <legend class="legend-field">What is the Alternate Universe called?</legend>
+          <legend class="legend">(Select All That Apply)</legend>
+          <div>
+            <input type="checkbox" name="in-between">
+            <label class="alt-label" for="hell">Hell</label>
+            <input type="checkbox" name="in-between">
+            <label class="alt-label" for="heaven">Heaven</label>
+            <input type="checkbox" name="in-between">
+            <label class="alt-label" for="Earth">Earth</label>
+            <input type="checkbox" name="in-between">
+            <label class="alt-label" for="in-between">In-Between</label>
+          </div>
+        </fieldset>
+        <!-- End Checkbox -->
+        <!-- Dropdown -->
+        <div id="dropdown">
+          <label class="dropdown-label-1" for="disappearances">Who's behind the disappearances?</label>
+          <select class="disappearances" name="disappearances">
+        <option class="disappear" value="ghost">Ghost</option>
+        <option class="disappear" value="alien">Alien</option>
+        <option class="disappear" value="Poltergeist">Poltergeist</option>
+        <option class="disappear" value="Shadow-man">Shadow-Man</option>
+        </select>
+        </div>
+        <!-- End Dropdown -->
+        <!-- Comments -->
+        <div>
+          <label class="comments" for="comments">What You Liked/Disliked About The Book?</label><br>
+          <textarea name="comments" id="comments" rows="2" cols="72" placeholder="Comment your likes/dislikes?"></textarea>
+        </div>
+        <!-- End Comments -->
+        <div class="submit">
+          <button class="btn-dark" id="submit" type="submit">Submit</button>
+        </div>
+      </form id="survey-form" name="survey-form">
+      <footer>
+        <div class="created">
+          <h2>Created By Madelein &copy 2018</h2>
+        </div>
+        <div class="contacts">
+          <a href="https://github.com/MaddyBotha"><i class="fab fa-github"></i></a>
+          <a href="https://www.freecodecamp.org/maddybotha"><i class="fab fa-free-code-camp"></i></a>
+          <a href="https://codepen.io/Maddy_B"><i class="fab fa-codepen"></i></a>
+        </div>
+      </footer>
+    </div>
+
+  </div>
+
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/app.js"></script>
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+  <!-- freecodecamp -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
