@@ -64,4 +64,7 @@ Go check out his [YouTube](https://www.youtube.com/watch?v=sr6jDeAoXCc&feature=y
 
 ## Project Thumbnails:
 
-<img src="./Survey_From_Large.png" width="auto" height="auto" >
+<img src="./Images/Design_Concept.jpeg" width="auto" height="auto" >
+
+<img src="./Images/Survey_From_Large.png" width="auto" height="auto" >
+
